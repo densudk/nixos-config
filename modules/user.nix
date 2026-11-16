@@ -46,12 +46,16 @@
       # "Start Virtual Camera" wants a v4l2loopback device too and will fight
       # gopro-webcam for video_nr=42; leave it off while streaming.
       obs-studio
-      anki
       vial
       ghostty
       texstudio
       qbittorrent
       fzf
+
+      # Agent control surface (desktop app + `t3` CLI). It drives the `pi`
+      # from the flake input: t3 finds it on PATH and enables it in
+      # Settings -> Providers. Codex is off — nothing here uses it.
+      (t3code.override { enableCodex = false; })
 
       # Browser automation for the pi agent (skill: agent-browser);
       # chromium is its CDP browser, found on PATH.
