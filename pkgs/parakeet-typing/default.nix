@@ -147,7 +147,7 @@ python.buildPythonApplication rec {
 
   meta = {
     description = "Local NVIDIA Parakeet TDT v3 voice typing for GNOME (IBus engine)";
-    homepage = "https://github.com/DenisSud/nixos-config";
+    homepage = "https://github.com/densudk/nixos-config";
     license = lib.licenses.mit;
     mainProgram = "parakeet-typing";
     platforms = lib.platforms.linux;

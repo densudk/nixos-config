@@ -7,9 +7,9 @@ My NixOS config, supporting two hosts:
 
 Dotfiles are managed as separate git repos and symlinked into place (out-of-band from NixOS):
 
-- **[dotfiles-shell](https://github.com/DenisSud/dotfiles-shell)** — Fish + Starship + Ghostty
-- **[dotfiles-nvim](https://github.com/DenisSud/dotfiles-nvim)** — Neovim config
-- **[dotfiles-pi](https://github.com/DenisSud/dotfiles-pi)** — Pi coding agent config
+- **[dotfiles-shell](https://github.com/densudk/dotfiles-shell)** — Fish + Starship + Ghostty
+- **[dotfiles-nvim](https://github.com/densudk/dotfiles-nvim)** — Neovim config
+- **[dotfiles-pi](https://github.com/densudk/dotfiles-pi)** — Pi coding agent config
 
 ## Repository Structure
 
@@ -184,7 +184,7 @@ git add -A
 git commit -m "scope: description of the change"
 ```
 
-Remote is `origin` pointing to `git@github.com:DenisSud/nixos-config.git`.
+Remote is `origin` pointing to `git@github.com:densudk/nixos-config.git`.
 Push after each commit:
 
 ```bash
@@ -197,9 +197,9 @@ After a fresh install, clone and link the dotfile repos:
 
 ```bash
 # Clone repos
-git clone git@github.com:DenisSud/dotfiles-shell.git ~/.dotfiles-shell
-git clone git@github.com:DenisSud/dotfiles-nvim.git ~/.dotfiles-nvim
-git clone git@github.com:DenisSud/dotfiles-pi.git ~/.dotfiles-pi
+git clone git@github.com:densudk/dotfiles-shell.git ~/.dotfiles-shell
+git clone git@github.com:densudk/dotfiles-nvim.git ~/.dotfiles-nvim
+git clone git@github.com:densudk/dotfiles-pi.git ~/.dotfiles-pi
 
 # Symlink everything
 fish ~/.dotfiles-shell/fish/dotfiles.fish link

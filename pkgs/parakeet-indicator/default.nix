@@ -20,7 +20,7 @@ stdenv.mkDerivation {
 
   meta = {
     description = "Floating waveform indicator for parakeet-typing";
-    homepage = "https://github.com/DenisSud/nixos-config";
+    homepage = "https://github.com/densudk/nixos-config";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;
   };
