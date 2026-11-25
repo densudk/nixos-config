@@ -82,12 +82,11 @@
     # addDriverRunpath — nothing extra to configure here.
     davinci-resolve
     gnomeExtensions.control-monitor-brightness-and-volume-with-ddcutil
-    # Minecraft Java client. PineconeMC (formerly ElyPrismLauncher) is a
-    # Prism fork with Ely.by and offline accounts, shipped upstream as an
-    # AppImage and repackaged in ../pkgs. The desktop's Minecraft server is
-    # offline-mode, so the client joins with an "Offline" account and no
-    # Microsoft login.
-    (pkgs.callPackage ../pkgs/pineconemc.nix { })
+    # Minecraft Java client. nixpkgs' Prism Launcher with the EGL setup the
+    # 26.3 renderer needs on NVIDIA/Wayland (see ../pkgs/prismlauncher.nix).
+    # The desktop's Minecraft server is offline-mode, so the client joins
+    # with Prism's "Offline" account and no Microsoft login.
+    (pkgs.callPackage ../pkgs/prismlauncher.nix { })
   ];
 
   # ── NVIDIA (RTX 5070 / Blackwell, open kernel module) ─
