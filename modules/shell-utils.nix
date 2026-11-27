@@ -27,6 +27,12 @@
     # `nix flake update pi`. Nix builds it from source, so a bump costs a
     # ~1–2 min local build; nothing is substituted from a binary cache.
     inputs.pi.packages.${pkgs.stdenv.hostPlatform.system}.default
+    # Codex CLI — OpenAI's terminal agent. Plain nixpkgs here: it comes from
+    # the binary cache and nixos-unstable tracks it within a release of
+    # upstream (0.171.0 against rust-v0.172.0 on 2026-11-27), so it does not
+    # need the pi treatment. Bump with `nix flake update nixpkgs`. Its
+    # config and credentials live in ~/.codex, out of band like pi's.
+    codex
     gh
     ntfs3g
     lsof

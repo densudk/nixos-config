@@ -263,7 +263,7 @@ Xray's `/etc/xray/config.json` is also deployed out-of-band (not managed by NixO
 - **LSP Servers**: vtsls, vscode-langservers-extracted, emmet-language-server, gopls, rust-analyzer, lua-language-server, basedpyright, nil
 - **Formatters**: nixfmt, stylua, prettierd, gofumpt, gotools, rustfmt, isort, black
 - **System Tools**: fastfetch, onefetch, gh, pi (upstream flake input),
-  parakeet-typing (voice typing)
+  codex (nixpkgs), parakeet-typing (voice typing)
 - **Nix Helpers**: nh, nix-index (replaces command-not-found)
 
 ## Common Tasks
